@@ -1,0 +1,37 @@
+Beatrice.Finance@uvsq.fr >> En charge des L3 Info
+
+Allocation statique:
+	{
+		int a;
+		int tab[10];
+	}
+	
+Allocation dynamique:
+	{
+		char* ch;
+		ch = new char[strlen("truc")+1];
+		strcpy(ch, "truc");
+	}
+	
+Important to restore memory after usage using:
+	delete[]ch;
+
+Class >> regroups objects with similar attributes.
+
+We can have many constructors but only one destructor per class.
+Destructor will have a "~".
+
+When dynamic allocation is used it is primordial to recall the memory within the destructor.
+
+classEtudiant {
+	int nom;
+	char* nom;
+	char* prenom;
+}
+Etudiant etud1(1, "Toto", "Dupont");
+{
+	Etudiant* pt.etud2 = new Etudiant(2, "Titi", "Grosminet");
+	etud1.travaille()l
+	etud2 ->travaille();
+	
+	delete pt.etud2;
