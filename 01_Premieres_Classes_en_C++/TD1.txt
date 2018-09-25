@@ -23,7 +23,7 @@ Destructor will have a "~".
 
 When dynamic allocation is used it is primordial to recall the memory within the destructor.
 
-classEtudiant {
+class Etudiant {
 	int nom;
 	char* nom;
 	char* prenom;
@@ -35,3 +35,16 @@ Etudiant etud1(1, "Toto", "Dupont");
 	etud2 ->travaille();
 	
 	delete pt.etud2;
+
+
+class Segment {
+	private:
+		Point orig;
+		Point dest;
+		...
+
+Segment::Segment(int x1, int y1, int x2, int y2)
+		:orig(x1,y2), dest(x2,y2){};
+		
+Segment::Segment(Point2 p1, Point2 p2)
+		:orig(p1), dest(p2){};
