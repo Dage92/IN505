@@ -9,7 +9,7 @@ class Point{
 		Point(Point* p);
 		void afficher();
 		void cloner(const Point &);
-		~Point(); //destructeur
+		//~Point(); //destructeur
 };
 
 #endif

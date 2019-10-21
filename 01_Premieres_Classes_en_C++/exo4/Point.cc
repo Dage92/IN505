@@ -22,8 +22,8 @@ Point::Point(Point* p){
 };
 
 /*Point::~Point(){
-	delete x;
-	delete y;
+	delete &x;
+	delete &y;
 }*/
 
 //Fonction qui permet d'afficher le point
